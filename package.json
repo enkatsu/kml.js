@@ -2,7 +2,7 @@
   "name": "kml.js",
   "version": "0.0.1",
   "description": "kml parser module",
-  "main": "main.ts",
+  "main": "dist/main.ts",
   "scripts": {
     "build": "tsc",
     "test": "mocha --reporter spec",
