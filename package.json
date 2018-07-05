@@ -1,7 +1,7 @@
 {
   "name": "kml.js",
   "version": "0.0.1",
-  "description": "kml parser module",
+  "description": "JavaScript KML parser library",
   "main": "dist/main.ts",
   "scripts": {
     "build": "tsc",
