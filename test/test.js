@@ -14,22 +14,22 @@ describe('KmlDocument class test', () => {
     const kmlDocument = new kmljs.KmlDocument(buffer.toString());
     expect(kmlDocument).to.be.a('object');
   });
-  it('should return KmlDocument name', () => {
+  xit('should return KmlDocument name', () => {
     const buffer = fs.readFileSync(KML_PATH);
     const kmlDocument = new kmljs.KmlDocument(buffer.toString());
     expect(kmlDocument.getName()).to.be.a('string');
   });
-  it('should return KmlDocument Style array', () => {
+  xit('should return KmlDocument Style array', () => {
     const buffer = fs.readFileSync(KML_PATH);
     const kmlDocument = new kmljs.KmlDocument(buffer.toString());
     expect(kmlDocument.getStyles()).to.be.a('array');
   });
-  it('should return KmlDocument StyleMap', () => {
+  xit('should return KmlDocument StyleMap', () => {
     const buffer = fs.readFileSync(KML_PATH);
     const kmlDocument = new kmljs.KmlDocument(buffer.toString());
     expect(kmlDocument.getStyleMaps()).to.be.a('array');
   });
-  it('should return KmlDocument Placemark array', () => {
+  xit('should return KmlDocument Placemark array', () => {
     const buffer = fs.readFileSync(KML_PATH);
     const kmlDocument = new kmljs.KmlDocument(buffer.toString());
     expect(kmlDocument.getPlacemarks()).to.be.a('array');
