@@ -78,6 +78,13 @@ for(const placemark of placemarks) {
 ```
 
 ## Test
+
 ```sh
-npm run test
+npm test
+```
+
+## Build
+
+```sh
+npm run build
 ```
