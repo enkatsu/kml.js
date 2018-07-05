@@ -1,1 +1,6 @@
-export const test = (str: any): string => 'test';
+export class KmlDocument {
+  constructor(kml: string) {
+    const parser = new DOMParser();
+    const xmlDoc = parser.parseFromString(kml, "text/xml");
+  }
+}
