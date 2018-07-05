@@ -1,6 +1,6 @@
 # kml.js
 
-A Node.js module that parse KML
+JavaScript KML parser library
 
 ## Installation
 
