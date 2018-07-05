@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "kmljs"
+    "url": "git+https://github.com/endoh0509/kml.js.git"
   },
   "keywords": [
     "kml",
@@ -19,6 +19,7 @@
   ],
   "author": "enkatsu",
   "license": "MIT",
+  "homepage": "https://github.com/endoh0509/kml.js",
   "devDependencies": {
     "@types/xml2js": "^0.4.3",
     "chai": "^4.1.2",
