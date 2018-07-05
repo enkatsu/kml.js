@@ -5,33 +5,39 @@ const fs = require('fs');
 
 describe('KmlDocument class test', () => {
   const KML_PATH = './test/kml/test.kml';
+
   it('should read KML test file', () => {
     expect(() => fs.readFileSync(KML_PATH))
       .not.throw(Error);
   });
+
   it('should return KmlDocument class\'s instance', () => {
     const buffer = fs.readFileSync(KML_PATH);
     const kmlDocument = new kmljs.KmlDocument(buffer.toString());
     expect(kmlDocument).to.be.a('object');
   });
-  xit('should return KmlDocument name', () => {
+
+  it('should get a name', () => {
     const buffer = fs.readFileSync(KML_PATH);
     const kmlDocument = new kmljs.KmlDocument(buffer.toString());
-    expect(kmlDocument.getName()).to.be.a('string');
+    expect(kmlDocument.name).to.equal('sample doc');
   });
-  xit('should return KmlDocument Style array', () => {
+
+  it('should return KmlDocument Style array', () => {
     const buffer = fs.readFileSync(KML_PATH);
     const kmlDocument = new kmljs.KmlDocument(buffer.toString());
-    expect(kmlDocument.getStyles()).to.be.a('array');
+    expect(kmlDocument.styles).to.be.a('array');
   });
-  xit('should return KmlDocument StyleMap', () => {
+
+  it('should return KmlDocument StyleMap', () => {
     const buffer = fs.readFileSync(KML_PATH);
     const kmlDocument = new kmljs.KmlDocument(buffer.toString());
-    expect(kmlDocument.getStyleMaps()).to.be.a('array');
+    expect(kmlDocument.styleMaps).to.be.a('array');
   });
-  xit('should return KmlDocument Placemark array', () => {
+
+  it('should return KmlDocument Placemark array', () => {
     const buffer = fs.readFileSync(KML_PATH);
     const kmlDocument = new kmljs.KmlDocument(buffer.toString());
-    expect(kmlDocument.getPlacemarks()).to.be.a('array');
+    expect(kmlDocument.placemarks).to.be.a('array');
   });
 });

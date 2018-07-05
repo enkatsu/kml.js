@@ -1,1 +1,1 @@
-export { KmlDocument } from './src/KmlDocument';
+export { KmlDocument } from './src/kml-document';
