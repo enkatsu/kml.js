@@ -1,5 +1,6 @@
 'use strict';
-const expect = require('chai').expect;
+const chai = require('chai');
+const expect = chai.expect;
 const kmljs = require('../dist/index.js');
 const fs = require('fs');
 

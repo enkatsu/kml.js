@@ -22,9 +22,7 @@
     "chai": "^4.1.2",
     "mocha": "^5.2.0",
     "typescript": "^2.9.2",
-    "xml2js": "^0.4.19"
-  },
-  "dependencies": {
+    "xml2js": "^0.4.19",
     "@types/xml2js": "^0.4.3"
   }
 }

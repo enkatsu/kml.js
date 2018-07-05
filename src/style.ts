@@ -1,23 +1,56 @@
 export class Style {
-  private _iconStyle: IconStyle | null = null;
-  private _labelStyle: LabelStyle | null = null;
-  private _balloonStyle: BalloonStyle | null = null;
+  private id: string = '';
+  private iconStyle: IconStyle | null = null;
+  private labelStyle: LabelStyle | null = null;
+  private balloonStyle: BalloonStyle | null = null;
 
   constructor(obj: any) {
-    this._iconStyle = new IconStyle(obj.IconStyle);
-    this._labelStyle = new LabelStyle(obj.IconStyle);
-    this._balloonStyle = new BalloonStyle(obj.IconStyle);
+    this.id = obj.$.id;
+    this.iconStyle = new IconStyle(obj.IconStyle);
+    this.labelStyle = new LabelStyle(obj.IconStyle);
+    this.balloonStyle = new BalloonStyle(obj.IconStyle);
   }
 }
 
 export class IconStyle {
-  constructor(obj: any) { }
+  private color: string = '';
+  private scale: number = 0;
+  private icon: string = '';
+  private hotSpot: HotSpot | null = null;
+
+  constructor(obj: any) {
+    this.color = obj.color;
+    this.scale = Number(obj.scale);
+    this.icon = obj.icon;
+    this.hotSpot = new HotSpot(obj.hotSpot);
+  }
+}
+
+export class HotSpot {
+  private x: number = 0;
+  private y: number = 0;;
+  private xunits: string = '';
+  private yunits: string = '';
+
+  constructor(obj: any) {
+    this.x = Number(obj.$.x);
+    this.y = Number(obj.$.y);
+    this.xunits = obj.$.xunits;
+    this.yunits = obj.$.yunits;
+  }
 }
 
 export class LabelStyle {
-  constructor(obj: any) { }
+  private scale: number = 0;
+  constructor(obj: any) {
+    this.scale = Number(obj.scale);
+  }
 }
 
 export class BalloonStyle {
-  constructor(obj: any) { }
+  private text: string = '';
+
+  constructor(obj: any) {
+    this.text = obj.text;
+  }
 }
