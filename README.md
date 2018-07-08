@@ -15,6 +15,8 @@ bower install kmljs --save
 
 ## Usage
 
+[TypeDoc](https://endoh0509.github.io/kml.js/)
+
 ### Sample KML
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -89,3 +91,7 @@ npm test
 ```sh
 npm run build
 ```
+
+## License
+
+MIT
