@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/endoh0509/kml.js.svg?branch=master)](https://travis-ci.org/endoh0509/kml.js)
+
 # kml.js
 
 JavaScript KML parser library
