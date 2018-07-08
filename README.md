@@ -54,8 +54,7 @@ var kmljs = require('kmljs');
 var fs = require('fs');
 var buffer = fs.readFileSync('KML_PATH');
 var kmlDocument = new kmljs.KmlDocument(buffer.toString());
-var placemarks = kmlDocument.getPlacemarks();
-for(var placemark of placemarks) {
+for(var placemark of kmlDocument.placemarks) {
   console.log(placemark);
 }
 ```
@@ -71,8 +70,7 @@ import { KmlDocument } from 'kmljs';
 import * as fs from 'fs-extra';
 const buffer = fs.readFileSync('KML_PATH');
 const kmlDocument = new KmlDocument(buffer.toString());
-const placemarks = kmlDocument.getPlacemarks();
-for(const placemark of placemarks) {
+for(const placemark of kmlDocument.placemarks) {
   console.log(placemark);
 }
 ```
