@@ -1,7 +1,8 @@
 # kml.js
 
 [![Build Status](https://travis-ci.org/endoh0509/kml.js.svg?branch=master)](https://travis-ci.org/endoh0509/kml.js)
-![license](https://img.shields.io/github/license/mashape/apistatus.svg)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 JavaScript KML parser library
 
